@@ -151,12 +151,29 @@ header {
 .nav-header li {
   list-style: none;
   padding-right: 48px;
+  
 }
 .nav-header a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400px;
   color: var(--text-color);
+  position: relative;
+  padding-bottom: 12px;
+}
+.nav-header a::after{
+  content: "";
+  width : 0;
+  height: 4px;
+  background-color: #EB8426;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+.nav-header a:hover::after{
+  width: 50%;
+  /* transform: translateX(100%); */
 }
 .nav-header a:hover {
   color: #eb8426;
