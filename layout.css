@@ -1,18 +1,22 @@
+
 .container{
-    max-width: 1272px;
+    max-width: 1296px;
     margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .row{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
+    flex-wrap: wrap;
+    margin-inline: calc((-1*(var( --gap) / 2)));
 }
 .col{
     max-width: 100%;
+    padding-inline: calc((var( --gap) / 2));
 }
 
 /* Responsive */
-@media screen and(min-width : 320px){
+@media screen and(min-width : 576px){
     .col-sm-1{
         max-width : calc((100% / 12) *1);
     }
@@ -51,7 +55,7 @@
     }
 }
 
-@media screen and (min-width : 720px){
+@media screen and (min-width : 768px){
     .col-md-1{
         max-width : calc((100% / 12) *1);
     }

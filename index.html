@@ -17,14 +17,14 @@
 <body>
   <header>
     <div class="container">
-      <div class="header-top">
+      <div class="header-top flex-box">
         <div class="logo">
           <a href="">
             <img src="./image/icon/Logo.svg" alt="" />
           </a>
         </div>
-        <div class="header-form">
-          <div class="header-filter">
+        <div class="header-form flex-box border-radius-50">
+          <div class="flex-box header-filter border-radius-50">
             <div>
               <select name="" id="">
                 <option value="">All categories</option>
@@ -35,7 +35,7 @@
               <img src="./image/icon/Expand_down_light.svg" alt="">
             </div>
           </div>
-          <div class="form-item">
+          <div class="form-item flex-box">
             <input type="text" placeholder="Search anything" />
             <button>
               <div class="icon-search-header">
@@ -44,31 +44,27 @@
             </button>
           </div>
         </div>
-        <div class="btn-header">
-          <button>Help</button>
-        </div>
-        <div class="header-setting">
-          <div class="item-setting ">
-            <div class="icon-setting">
-              <img src="./image/icon/User.svg" alt="">
-            </div>
-            <div class="text-setting">
-              <a href="">Account </a>
-            </div>
-          </div>
-          <div class="item-setting">
-            <div class="icon-setting item-setting-bag">
-              <img src="./image/icon/Bag_alt.svg" alt="">
-            </div>
-            <div class="text-setting">
-              <a href="">Account </a>
-            </div>
-          </div>
+        <div class="header-setting flex-box">
+          <ul class="nav-setting flex-box justify-between">
+            <li><a class="link-header-top border-radius-50" href="">Help</a></li>
+            <li><a href="">
+                <img src="./image/icon/User.svg" alt="">
+                <span class="heading-small">Accout</span>
+              </a>
+            </li>
+            <li><a href="">
+                <img src="./image/icon/Bag_alt.svg" alt="">
+                <span class="heading-small">Shopping</span>
+              </a>
+
+            </li>
+
+          </ul>
         </div>
 
       </div>
       <div class="header-main">
-        <ul class="nav-header">
+        <ul class="nav-header flex-box">
           <li><a href="">Jewelry & Accessories</a></li>
           <li><a href="">Clothing & Shoes</a></li>
           <li><a href="">Home & Living</a></li>
@@ -81,34 +77,34 @@
     </div>
   </header>
   <main>
-    <section class="products-sidebar section-distance-bar">
+    <section class="products-sidebar margin-top-24">
       <div class="container">
         <div class="row">
-          <div class="col col-xl-4">
-            <div class="img-product-item">
-              <img src="./image/banner/unsplash_mO-_iF_FkCk.png" alt="">
-              <div class="title-product-item">
-                <h5>
+          <div class="col col-xl-4 col-lg-4 col-sm-12">
+            <div class="card card-style-product-1">
+              <img src="./image/banner/unsplash_mO-_iF_FkCk.png" alt="" class="card-img-full">
+              <div class="card-body-child">
+                <h5 class="heading-smaller">
                   Clothing & Shoes
                 </h5>
               </div>
             </div>
           </div>
-          <div class="col col-xl-4">
-            <div class="img-product-item">
-              <img src="./image/banner/unsplash_gDrUY7QUeng.png" alt="">
-              <div class="title-product-item">
-                <h5>
+          <div class="col col-xl-4 col-lg-4 col-sm-12">
+            <div class="card card-style-product-1">
+              <img src="./image/banner/unsplash_gDrUY7QUeng.png" alt="" class="card-img-full">
+              <div class="card-body-child">
+                <h5 class="heading-smaller">
                   Clothing & Shoes
                 </h5>
               </div>
             </div>
           </div>
-          <div class="col col-xl-4">
-            <div class="img-product-item">
-              <img src="./image/banner/unsplash_q4LIvI9NN6Y.png" alt="">
-              <div class="title-product-item">
-                <h5>
+          <div class="col col-xl-4 col-lg-4 col-sm-12">
+            <div class="card card-style-product-1">
+              <img src="./image/banner/unsplash_q4LIvI9NN6Y.png" alt="" class="card-img-full">
+              <div class="card-body-child">
+                <h5 class="heading-smaller">
                   Clothing & Shoes
                 </h5>
               </div>
@@ -118,277 +114,307 @@
       </div>
       </div>
     </section>
-    <section class="products-main section-distance-bar">
+    <section class="products-main margin-top-24">
       <div class="container">
-        <div class="row">
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-green">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19.png" alt="">
+        <div class="row flex-box">
+          <div class="col col-xl-3 col-lg-4 ">
+            <div class="card card-product-style-2 border-radius-5 product-bg-green">
+              <div class="card-favorite-item border-radius-50">
+                <button class="border-radius-50">
+                  <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                </button>
               </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
+              <img src="./image/product main/Rectangle 19.png" alt="" class="card-img-top-2">
+              <div class="card-body-product-item">
+                <div class="card-product-color">
+                  <h5 class="color-title">
+                    Colors
+                  </h5>
+                  <div class="product-list-color">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
                 </div>
-                <h5 class="title-desc-product">
+                <h5 class="card-title-item margin-top-24">
                   Vonna Neva Walnut Sandalye Chair
                 </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
+                <span class="card-product-price">
+                  458,43 $
+                </span>
               </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-darkorange">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 (3).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-purple">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 (1).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-lightorange">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 (2).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
 
+            </div>
+          </div>
+          <div class="col col-xl-3 col-lg-4 ">
+            <div class="card card-product-style-2 border-radius-5 product-bg-darkorange">
+              <div class="card-favorite-item border-radius-50">
+                <button class="border-radius-50">
+                  <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                </button>
+              </div>
+              <img src="./image/product main/Rectangle 19 (3).png" alt="" class="card-img-top-2">
+              <div class="card-body-product-item">
+                <div class="card-product-color">
+                  <h5 class="color-title">
+                    Colors
+                  </h5>
+                  <div class="product-list-color">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                </div>
+                <h5 class="card-title-item margin-top-24">
+                  Vonna Neva Walnut Sandalye Chair
+                </h5>
+                <span class="card-product-price">
+                  458,43 $
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="col col-xl-3 col-lg-4 ">
+            <div class="card card-product-style-2 border-radius-5 product-bg-purple">
+              <div class="card-favorite-item border-radius-50">
+                <button class="border-radius-50">
+                  <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                </button>
+              </div>
+              <img src="./image/product main/Rectangle 19 (1).png" alt="" class="card-img-top-2">
+              <div class="card-body-product-item">
+                <div class="card-product-color">
+                  <h5 class="color-title">
+                    Colors
+                  </h5>
+                  <div class="product-list-color">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                </div>
+                <h5 class="card-title-item margin-top-24">
+                  Vonna Neva Walnut Sandalye Chair
+                </h5>
+                <span class="card-product-price">
+                  458,43 $
+                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="col col-xl-3 col-lg-4 ">
+            <div class="card card-product-style-2 border-radius-5 product-bg-lightorange">
+              <div class="card-favorite-item border-radius-50">
+                <button class="border-radius-50">
+                  <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                </button>
+              </div>
+              <img src="./image/product main/Rectangle 19 (2).png" alt="" class="card-img-top-2">
+              <div class="card-body-product-item">
+                <div class="card-product-color">
+                  <h5 class="color-title">
+                    Colors
+                  </h5>
+                  <div class="product-list-color">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                </div>
+                <h5 class="card-title-item margin-top-24">
+                  Vonna Neva Walnut Sandalye Chair
+                </h5>
+                <span class="card-product-price">
+                  458,43 $
+                </span>
+              </div>
+
+            </div>
           </div>
         </div>
-
       </div>
     </section>
-    <section class="products-post section-distance">
+    <section class="products-post margin-top-48">
       <div class="container">
-        <div class="row">
-          <div class="col col-xl-4">
-            <div class="item-product-post">
-              <div class="content-product">
-                <h5 class="title-content-product">
+        <div class="row products">
+          <div class="col col-xl-4 col-lg-4">
+            <div class="card card-post-style-1 flex-box">
+              <div class="card-body-post">
+                <h5 class="card-post-title heading-smaller">
                   A community
                   doing good
                 </h5>
-                <p>
+                <p class="card-post-desc">
                   Commerce is a global online marketplace, where people.
                 </p>
               </div>
-              <div class="img-product-post">
+              <div class="card-img-right">
                 <img src="./image/post/unsplash_bU8TeXhsPcY.png" alt="">
               </div>
             </div>
+
           </div>
-          <div class="col col-xl-4">
-            <div class="item-product-post">
-              <div class="content-product">
-                <h5 class="title-content-product">
+          <div class="col col-xl-4 col-lg-4">
+            <div class="card card-post-style-1 flex-box">
+              <div class="card-body-post">
+                <h5 class="card-post-title heading-smaller">
                   A community
                   doing good
                 </h5>
-                <p>
+                <p class="card-post-desc">
                   Commerce is a global online marketplace, where people.
                 </p>
               </div>
-              <div class="img-product-post">
+              <div class="card-img-right">
                 <img src="./image/post/unsplash_esRJtEsvJhU.png" alt="">
               </div>
             </div>
+
           </div>
-          <div class="col col-xl-4">
-            <div class="item-product-post">
-              <div class="content-product">
-                <h5 class="title-content-product">
+          <div class="col col-xl-4 col-lg-4">
+            <div class="card card-post-style-1 flex-box">
+              <div class="card-body-post">
+                <h5 class="card-post-title heading-smaller">
                   A community
                   doing good
                 </h5>
-                <p>
+                <p class="card-post-desc">
                   Commerce is a global online marketplace, where people.
                 </p>
               </div>
-              <div class="img-product-post">
+              <div class="card-img-right">
                 <img src="./image/post/unsplash_m_7p45JfXQo.png" alt="">
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
-    <section class="products-sellers section-distance">
+    <section class="products-sellers margin-top-48">
       <div class="container">
-        <div class="heading-products">
-          <h5>
+        <div class="product-heading-seller ">
+          <h5 class="heading-big">
             Find things you'll love. Support independent sellers.
           </h5>
           <p>
             Only on polka.
           </p>
         </div>
-        <div class="list-products-sellers section-distance">
-          <div class="container">
-            <div class="row-croll">
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 25.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
+        <div class="products-sellers-list margin-top-48">
+          <div class="row products-sellers-row">
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 25.png" alt="" class="">
                 </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 27.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 29.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 31.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 33.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 35.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 37.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
-                    Craft Kits
-                  </h5>
-                </div>
-              </div>
-              <div class="col-croll">
-                <div class="item-products-seller">
-                  <div class="img-product-seller">
-                    <img src="./image/seller/Rectangle 39.png" alt="">
-                  </div>
-                  <h5 class="title-item-seller">
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
                     Craft Kits
                   </h5>
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 27.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Throw Pillows
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 29.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Natural Glass
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 31.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Self-care
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 33.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Wall Decor
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 35.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Wall Decor
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 37.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Wedding
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-product-seller ">
+                <div class="box-shawdow-1 card-seller-img">
+                  <img src="./image/seller/Rectangle 39.png" alt="" class="">
+                </div>
+                <div class="card-body-seller margin-top-24">
+                  <h5 class="card-seller-title">
+                    Life Style
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
-    <section class="products-discover section-distance">
+
+    <section class="products-discover margin-top-48">
       <div class="container">
-        <div class="heading-product-discover">
+        <div class="product-discover-heading">
           <h5>
             Discover unique hand-picked items
           </h5>
@@ -396,370 +422,270 @@
             <a href="">
               View all
             </a>
-            <img src="./image/icon/Arrow_right.svg" alt="">
+            <img src="./image/icon/Arrow_right (1).svg" alt="">
           </div>
 
         </div>
-        <div class="list-products-discover section-distance">
-          <div class="container">
-            <div class="row-croll">
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 47.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        Distressed Tote Leather Bag Leather Bag
-                      </h5>
-                      <p class="price-product">
-                        216,27 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Modern
-                      Farmhouse
-                    </h5>
-                  </div>
+        <div class="margin-top-48">
+          <div class="row">
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 47.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    Distressed Tote Leather Bag Leather Bag
+                  </h5>
+                  <span class="card-product-price">
+                    458,43 $
+                  </span>
                 </div>
               </div>
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 49.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        Womens Cognac Leather Elastic Straps
-                      </h5>
-                      <p class="price-product">
-                        195,13 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Modern
-                      Farmhouse
-                    </h5>
-                  </div>
+            </div>
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 49.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    Womens Cognac Leather Elastic Straps
+                  </h5>
+                  <span class="card-product-price">
+                    195,13 $
+                  </span>
                 </div>
               </div>
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 51.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        Distressed Tote Leather Bag Leather Bag
-                      </h5>
-                      <p class="price-product">
-                        910,76 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Modern
-                      Farmhouse
-                    </h5>
-                  </div>
+            </div>
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 51.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    Distressed Tote Leather Bag Leather Bag
+                  </h5>
+                  <span class="card-product-price">
+                    910,76 $
+                  </span>
                 </div>
               </div>
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 53.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        High Top Canvas Shoes
-                      </h5>
-                      <p class="price-product">
-                        341,02 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Minimalist
-                      Style
-                    </h5>
-                  </div>
+            </div>
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 53.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    High Top Canvas Shoes
+                  </h5>
+                  <span class="card-product-price">
+                    341,02 $
+                  </span>
                 </div>
               </div>
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 55.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        Rose Gold Moissanite Vintage Wedding Ring Set
-                      </h5>
-                      <p class="price-product">
-                        3.344,13 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Anniversary
-                      Gift
-                    </h5>
-                  </div>
+            </div>
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 55.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    Rose Gold Moissanite Vintage Wedding Ring Set
+                  </h5>
+                  <span class="card-product-price">
+                    3.344,13 $
+                  </span>
                 </div>
               </div>
-              <div class="col-croll">
-                <div class="item-product-discover">
-                  <div class="box-item-discover">
-                    <div class="img-box-item">
-                      <img src="./image/discover/Rectangle 57.png" alt="">
-                    </div>
-                    <div class="desc-box-item">
-                      <h5>
-                        Blue Topaz Bangle 24K Gold Plated Handmade
-                      </h5>
-                      <p class="price-product">
-                        789,09 $
-                      </p>
-                    </div>
-                  </div>
-                  <div class="category-product-discover">
-                    <h5>
-                      Wedding
-                      Gifts
-                    </h5>
-                  </div>
+            </div>
+            <div class="col col-xl-2 col-lg-4 ">
+              <div class="card card-product-style-3 border-radius-5 box-shawdow-1">
+                <div class="border-radius-50 card-favorite-style-3">
+                  <button class="border-radius-50 ">
+                    <img class="flex-box" src="./image/icon/Favorite.svg" alt="">
+                  </button>
+                </div>
+                <img src="./image/discover/Rectangle 57.png" alt="" class="card-img-top-3">
+                <div class="card-product-discover">
+                  <h5 class="card-title-discover ">
+                    Blue Topaz Bangle 24K Gold Plated Handmade
+                  </h5>
+                  <span class="card-product-price">
+                    789,09 $
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="products-discover-categories margin-top-48">
+          <div class="row categories-row">
+            <div class="col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Modern
+                Farmhouse
+              </button>
+            </div>
+            <div class="col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Eclectic 
+                Decor
+              </button>
+            </div>
+            <div class=" col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Modern
+                Farmhouse
+              </button>
+            </div>
+            <div class=" col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Polka Boho 
+Decor
+              </button>
+            </div>
+            <div class=" col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Wedding
+Gifts
+              </button>
+            </div>
+            <div class=" col col-xl-2 category-item">
+              <button class="item-select-btn heading-smaller">
+                Minimalist
+                Style
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="products-main section-distance">
+    <section class="contact margin-top-48">
       <div class="container">
-        <div class="row">
-          <div class="col col-xl-3">
-            <div class="item-product-main">
-              <div class="img-first-main">
-                <img src="./image/product main/unsplash_M7cQqGjBNm8.png" alt="">
+        <div class="content-contact">
+          <div class="text-content-contact">
+            <p>Yes!</p>
+            <p>Send me exclusive offers, unique gift ideas, and personalized
+              tips for shopping and selling on Commerce.</p>
+          </div>
+          <div class="form-contact">
+            <div class="item-inp-contact">
+              <input type="text" name="" id="" placeholder="Drop your Email">
+            </div>
+            <div class="item-btn-contact">
+              <div>
+                <button>
+                  Subscribe
+                </button>
+              </div>
+              <div>
+                <img src="./image/icon/Arrow_right.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-darkorange">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 4 (1).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-purple">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 4 (3).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col col-xl-3">
-            <div class="item-product-main item-bg-lightorange">
-              <div class="img-product-main">
-                <img src="./image/product main/Rectangle 19 4 (2).png" alt="">
-              </div>
-              <div class="desc-product-main">
-                <p class="text-color-desc">
-                  Colors
-                </p>
-                <div class="list-color-products">
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                  <button></button>
-                </div>
-                <h5 class="title-desc-product">
-                  Vonna Neva Walnut Sandalye Chair
-                </h5>
-                <p class="price-product">
-                  195,13 $
-                </p>
-              </div>
-              <div class="favorite-item">
-                <img src="./image/icon/Favorite.svg" alt="">
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="section-distance">
-      <div class="list-products-discover section-distance">
-        <div class="container">
-          <div class="row-croll">
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 47.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      Distressed Tote Leather Bag Leather Bag
-                    </h5>
-                    <p class="price-product">
-                      216,27 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 49.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      Womens Cognac Leather Elastic Straps
-                    </h5>
-                    <p class="price-product">
-                      195,13 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 51.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      Distressed Tote Leather Bag Leather Bag
-                    </h5>
-                    <p class="price-product">
-                      910,76 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 53.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      High Top Canvas Shoes
-                    </h5>
-                    <p class="price-product">
-                      341,02 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 55.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      Rose Gold Moissanite Vintage Wedding Ring Set
-                    </h5>
-                    <p class="price-product">
-                      3.344,13 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-croll">
-              <div class="item-product-discover">
-                <div class="box-item-discover">
-                  <div class="img-box-item">
-                    <img src="./image/discover/Rectangle 57.png" alt="">
-                  </div>
-                  <div class="desc-box-item">
-                    <h5>
-                      Blue Topaz Bangle 24K Gold Plated Handmade
-                    </h5>
-                    <p class="price-product">
-                      789,09 $
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+          <div class="heading-bottom-contact">
+            <p>First order only. You’re ready?</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="margin-top-48">
+    <div class="footer-main">
+      <div class="heading-top-footer">
+        <p>Commerce, is powered by 100% renewable electricity.</p>
+      </div>
+      <div class="container">
+        <div class="content-footer">
+          <div class="row">
+            <div class="col col-xl-3">
+              <div class="logo-footer">
+                <img src="./image/icon/Logo.svg" alt="">
+              </div>
+              <p class="">
+                Cricklewood,London
+                NW2 6qg, Uk
+              </p>
+              <ul class="nav-footer">
+                <li><a href=""><img src="./image/icon/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="./image/icon/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="./image/icon/linkedin.svg" alt=""></a></li>
+                <li><a href=""><img src="./image/icon/dribbble.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col col-xl-9">
+              <div class="container">
+                <div class="row">
+                  <div class="col col-xl-3">
+                    <div class="list-footer">
+                      <ul class="nav-footer">
+                        <h5>
+                          Shop
+                        </h5>
+                        <li><a href="">Gift cards</a></li>
+                        <li><a href="">Site map</a></li>
+                        <li><a href="">Polka blog</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign in</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col col-xl-3">
+                    <div class="list-footer">
+                      <ul class="nav-footer">
+                        <h5>
+                          Shop
+                        </h5>
+                        <li><a href="">Gift cards</a></li>
+                        <li><a href="">Site map</a></li>
+                        <li><a href="">Polka blog</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign in</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col col-xl-3">
+                    <div class="list-footer">
+                      <ul class="nav-footer">
+                        <h5>
+                          Shop
+                        </h5>
+                        <li><a href="">Gift cards</a></li>
+                        <li><a href="">Site map</a></li>
+                        <li><a href="">Polka blog</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign in</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
