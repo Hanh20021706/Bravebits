@@ -11,7 +11,8 @@
     margin-inline: calc((-1*(var( --gap) / 2)));
 }
 .col{
-    max-width: 100%;
+    width: 100%;
+    /* max-width: 100%; */
     padding-inline: calc((var( --gap) / 2));
 }
 
