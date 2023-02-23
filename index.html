@@ -8,6 +8,7 @@
   <title>E-commerce</title>
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="helperclass.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,13 +18,13 @@
 <body>
   <header>
     <div class="container">
-      <div class="header-top flex-box">
-        <div class="logo">
-          <a href="">
-            <img src="./image/icon/Logo.svg" alt="" />
-          </a>
+      <div class="header-top-grid">
+        <div class="logo-header">
+            <a href="">
+              <img src="./image/icon//Logo.svg" alt="">
+            </a>
         </div>
-        <div class="header-form flex-box border-radius-50">
+        <div class="header-form item-center border-radius-50 flex-box">
           <div class="flex-box header-filter border-radius-50">
             <div>
               <select name="" id="">
@@ -61,19 +62,19 @@
 
           </ul>
         </div>
-
+        <div class="header-nav">
+          <ul class="nav-header flex-box">
+            <li><a href="">Jewelry & Accessories</a></li>
+            <li><a href="">Clothing & Shoes</a></li>
+            <li><a href="">Home & Living</a></li>
+            <li><a href="">Wedding & Party</a></li>
+            <li><a href="">Toys & Entertainment</a></li>
+            <li><a href="">Art & Collectibles</a></li>
+            <li><a href="">Craft Supplies & Tools</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="header-main">
-        <ul class="nav-header flex-box">
-          <li><a href="">Jewelry & Accessories</a></li>
-          <li><a href="">Clothing & Shoes</a></li>
-          <li><a href="">Home & Living</a></li>
-          <li><a href="">Wedding & Party</a></li>
-          <li><a href="">Toys & Entertainment</a></li>
-          <li><a href="">Art & Collectibles</a></li>
-          <li><a href="">Craft Supplies & Tools</a></li>
-        </ul>
-      </div>
+     
     </div>
   </header>
   <main>
@@ -120,7 +121,7 @@
           <div class="col col-xl-3 col-lg-4 ">
             <div class="card card-product-style-2 border-radius-5 product-bg-green">
              <button class="border-radius-50 car-favorite-btn"> <img class="flex-box" src="./image/icon/Favorite.svg" alt=""> </button>
-              <img src="./image/product main/Rectangle 19.png" alt="" class="card-img-top-2">
+              <img src="./image/product main/Rectangle 19.png" alt="" class="card-img-top-2 item-center">
               <div class="card-body-product-item">
                 <div class="card-product-color">
                   <h5 class="color-title">
@@ -228,7 +229,7 @@
       <div class="container">
         <div class="row products">
           <div class="col col-xl-4 col-lg-4">
-            <div class="card card-post-style-1 flex-box">
+            <div class="card card-post-style-1 item-center flex-box">
               <div class="card-body-post">
                 <h5 class="card-post-title heading-smaller">
                   A community
@@ -395,16 +396,19 @@
         </div>
       </div>
     </section>
-    <section class="products-main margin-top-24">
+    <section class="products-main margin-top-48">
       <div class="container">
         <div class="row">
           <div class="col col-xl-3 col-lg-4 ">
-              <img src="./image/product main/unsplash_M7cQqGjBNm8.png" alt="">
+            <div class="car-body-product__first">
+              <img class="height-100" src="./image/product main/unsplash_M7cQqGjBNm8.png" alt="">
+
+            </div>
           </div>
           <div class="col col-xl-3 col-lg-4 ">
-            <div class="card card-product-style-2 border-radius-5 product-bg-darkorange">
+            <div class="card card-product-style-2 height-100 border-radius-5 product-bg-darkorange">
              <button class="border-radius-50 car-favorite-btn"> <img class="flex-box" src="./image/icon/Favorite.svg" alt=""> </button>
-              <img src="./image/product main/Rectangle 19 (3).png" alt="" class="card-img-top-2">
+              <img src="./image/product main/Rectangle 19 4 (3).png" alt="" class="card-img-top-2">
               <div class="card-body-product-item">
                 <div class="card-product-color">
                   <h5 class="color-title">
@@ -428,9 +432,9 @@
             </div>
           </div>
           <div class="col col-xl-3 col-lg-4 ">
-            <div class="card card-product-style-2 border-radius-5 product-bg-purple">
+            <div class="card card-product-style-2 height-100 border-radius-5 product-bg-purple">
              <button class="border-radius-50 car-favorite-btn"> <img class="flex-box" src="./image/icon/Favorite.svg" alt=""> </button>
-              <img src="./image/product main/Rectangle 19 (1).png" alt="" class="card-img-top-2">
+              <img src="./image/product main/Rectangle 19 4 (2).png" alt="" class="card-img-top-2">
               <div class="card-body-product-item">
                 <div class="card-product-color">
                   <h5 class="color-title">
@@ -454,9 +458,9 @@
             </div>
           </div>
           <div class="col col-xl-3 col-lg-4 ">
-            <div class="card card-product-style-2 border-radius-5 product-bg-lightorange">
+            <div class="card card-product-style-2 height-100 border-radius-5 product-bg-lightorange">
              <button class="border-radius-50 car-favorite-btn"> <img class="flex-box" src="./image/icon/Favorite.svg" alt=""> </button>
-              <img src="./image/product main/Rectangle 19 (2).png" alt="" class="card-img-top-2">
+              <img src="./image/product main/Rectangle 19 4 (1).png" alt="" class="card-img-top-2">
               <div class="card-body-product-item">
                 <div class="card-product-color">
                   <h5 class="color-title">
@@ -582,7 +586,7 @@
             <p class="heading-big">Send me exclusive offers, unique gift ideas, and personalized
               tips for shopping and selling on Commerce.</p>
           </div>
-          <div class="form-contact">
+          <div class="form-contact item-center">
             <div class="item-inp-contact">
               <input type="text" name="" id="" placeholder="Drop your Email">
             </div>
@@ -677,7 +681,7 @@
     </div>
     <div class="footer-heading-bottom">
       <div class="container">
-        <div class="row">
+        <div class="row item-center">
           <div class="col col-xl-4">
             <p>© 2022 Commerce, Inc.</p>
           </div>
