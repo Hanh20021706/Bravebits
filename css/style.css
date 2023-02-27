@@ -184,8 +184,8 @@ main {
 }
 .card-main-title {
   padding-bottom: 8px;
-  max-width: 220px;
-  max-height: 56px;
+  /* max-width: 220px; */
+  height: 56px;
 }
 .card-price {
   font-size: 14px;
@@ -258,7 +258,7 @@ main {
   text-align: center;
   margin-top: 24px;
   font-size: 14px;
-  font-family: 500;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -269,6 +269,9 @@ main {
   margin-top: 48px;
 }
 .products-discover-title {
+}
+.col-discover-padding{
+  padding: 10px;
 }
 .products-discover-list {
   margin-top: 24px;
@@ -756,9 +759,18 @@ footer {
 
   /* contact */
   
+  .xl-width{
+    max-width: 551px;
+  }
   .contact-form {
     width: 648px;
     margin: auto;
+  }
+  .form-item{
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .contact-text-sub {
     text-align: center;
