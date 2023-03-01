@@ -1,3 +1,5 @@
+// products main
+
 function openItem(itemName) {
   var i;
   var x = document.getElementsByClassName("item-main");
@@ -6,6 +8,8 @@ function openItem(itemName) {
   }
   document.getElementById(itemName).style.display = "block";
 }
+
+// categories
 
 function openCate(cateName) {
   var i;
@@ -38,13 +42,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -54,3 +56,34 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// menu
+
+function functionToggle() {
+  var x = document.getElementById("navMain");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+
+const tabs = $$(".category-discover-btn");
+const panes = $$(".category-2__product-list");
+
+
+tabs.forEach((tab, index) => {
+  const pane = panes[index];
+
+  tab.onclick = function () {
+    console.log(tab)
+    $(".category-discover-btn.category-discover-btn--active").classList.remove("category-discover-btn--active");
+    $(".category-2__product-list.category-2__product-list--active").classList.remove("category-2__product-list--active");
+    
+    this.classList.add("category-discover-btn--active");
+    pane.classList.add("category-2__product-list--active");
+  };
+});
