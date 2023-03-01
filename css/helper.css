@@ -6,6 +6,9 @@
 .justify-center {
   justify-content: center;
 }
+.flex-nowap{
+  flex-wrap: nowrap;
+}
 .flex-colunm {
   flex-direction: column;
 }

@@ -294,6 +294,9 @@ main {
 .products-sellers-heading p {
   color: #9a9a9a;
 }
+.card-seller-img{
+  width: 128px;
+}
 .products-sellers-list {
   margin-top: 48px;
 }
@@ -828,5 +831,8 @@ footer {
   }
   .categories-discover {
     margin-bottom: 24px;
+  }
+  .heading-discover-title{
+    max-width: 100%;
   }
 }

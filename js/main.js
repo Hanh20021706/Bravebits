@@ -13,11 +13,11 @@ function openItem(itemName) {
 
 function openCate(cateName) {
   var i;
-  var x = document.getElementsByClassName("item-main-2");
+  var x = document.getElementsByClassName("category-item");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  document.getElementById(cateName).style.display = "block";
+  document.getElementById(cateName).style.display = "flex";
 }
 
 // Get the button
@@ -67,23 +67,27 @@ function functionToggle() {
     x.style.display = "block";
   }
 }
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 
-const tabs = $$(".category-discover-btn");
-const panes = $$(".category-2__product-list");
 
 
-tabs.forEach((tab, index) => {
-  const pane = panes[index];
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
 
-  tab.onclick = function () {
-    console.log(tab)
-    $(".category-discover-btn.category-discover-btn--active").classList.remove("category-discover-btn--active");
-    $(".category-2__product-list.category-2__product-list--active").classList.remove("category-2__product-list--active");
+
+// const tabs = $$(".category-discover-btn");
+// const panes = $$(".category-2__product-list");
+
+
+// tabs.forEach((tab, index) => {
+//   const pane = panes[index];
+
+//   tab.onclick = function () {
+//     console.log(tab)
+//     $(".category-discover-btn.category-discover-btn--active").classList.remove("category-discover-btn--active");
+//     $(".category-2__product-list.category-2__product-list--active").classList.remove("category-2__product-list--active");
     
-    this.classList.add("category-discover-btn--active");
-    pane.classList.add("category-2__product-list--active");
-  };
-});
+//     this.classList.add("category-discover-btn--active");
+//     pane.classList.add("category-2__product-list--active");
+//   };
+// });
