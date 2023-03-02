@@ -423,7 +423,7 @@ main {
   height: 16px;
 }
 footer {
-  margin-top: 48px;
+  
 }
 .footer-top {
   background-color: var(--bacground-gray);
@@ -431,7 +431,7 @@ footer {
   text-align: center;
 }
 .footer-main {
-  margin-top: 40px;
+  padding: 40px 0;
 }
 .order-sm-5 {
   order: 5;
