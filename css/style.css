@@ -149,9 +149,7 @@ img {
   border: none;
   background-color: var(--background-white);
 }
-.setiing-nav-item {
-  padding: 0px 12px;
-}
+
 .btn-open-nav {
   border: none;
   background-color: var(--background-white);
